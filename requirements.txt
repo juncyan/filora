@@ -1,0 +1,13 @@
+causal_conv1d_cuda_paddle==0.0.0
+huggingface-hub==0.33.0
+imageio==2.36.0
+numpy==1.23.5
+paddleclas==2.6.0
+paddlefsl==1.1.0
+-e git+https://github.com/PaddlePaddle/PaddleMIX@40883610f46f4abc86b9fbaa580b084e479b56cc#egg=paddlemix
+paddlenlp==3.0.0b4
+paddlepaddle-gpu==3.0.0
+paddlesde==0.2.5
+paddleseg==2.8.0
+paddlex @ https://paddle-model-ecology.bj.bcebos.com/paddlex/whl/paddlex-3.0.0b1-py3-none-any.whl#sha256=5cd148bc523e1650852fd87781e23190d728110bb2d324b2c9888ae96656b51e
+pandas==2.2.3
