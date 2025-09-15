@@ -20,7 +20,7 @@ from cd_models.replkcd import CD_RLKNet
 from cd_models.efisam import EFISam
 from paddleseg.models import UNet
 from cd_models.cienet.ciescd import CIENetTinyViT
-from sffnet.model import SFFNet_BCD
+from scfnet.model import SCFNet_BCD
 
 from core.bcdwork import Work
 
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     # model = CD_RLKNet()
     # model = EFISam(img_size=args.img_size)
     # model = FFINetVT_CD(img_size=args.img_size)
-    model = SFFNet_BCD(img_size=args.img_size)
+    model = SCFNet_BCD(img_size=args.img_size)
    
     w = Work(model, args)
   

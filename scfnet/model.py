@@ -13,7 +13,7 @@ from einops import rearrange, repeat
 from .sam import MSAM
 from .modules import BitemporalChangeInformationFusion, MultiScaleFeatureAggregation, Local_Feature_Gather
 
-class SFFNet_BCD(nn.Layer):
+class SCFNet_BCD(nn.Layer):
     #SSM Feature Inteaction Network
     def __init__(self, img_size, num_cls=2, sam_checkpoint=r"/home/jq/Code/weights/vit_t.pdparams"):
         super().__init__()
@@ -60,7 +60,7 @@ class SFFNet_BCD(nn.Layer):
         return y
     
 
-class SFFNet_SCD(SFFNet_BCD):
+class SCFNet_SCD(SCFNet_BCD):
     def __init__(self, img_size, num_seg=7, sam_checkpoint=r"/home/jq/Code/weights/vit_t.pdparams"):
         super().__init__(img_size=img_size, num_cls=1, sam_checkpoint=sam_checkpoint)
 

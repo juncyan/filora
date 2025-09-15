@@ -16,7 +16,7 @@ from cd_models.f3net import F3Net
 from paddleseg.models import UNet
 from cd_models.replkcd import CD_RLKNet
 from cd_models.cienet.ciescd import CIENetTinyViT
-from sffnet.model import SFFNet_SCD
+from scfnet.model import SCFNet_SCD
 from core.scdwork import Work
 
 
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     # model = FESCD_Xcep65(img_size=args.img_size, num_seg=args.num_classes)
     # model = CIENetTinyViT(img_size=args.img_size, num_seg=args.num_classes)
     # model = FFINetVT_SCD(img_size=args.img_size, num_seg=args.num_classes)
-    model = SFFNet_SCD(img_size=args.img_size, num_seg=args.num_classes)
+    model = SCFNet_SCD(img_size=args.img_size, num_seg=args.num_classes)
     # model = FFINetVL_SCD(img_size=args.img_size, num_seg=args.num_classes)
     w = Work(model, args)
     
