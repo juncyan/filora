@@ -1,10 +1,7 @@
-## A State Space Model-guided Cross-temporal Feature Fine-tuning Framework for Remote Sensing Change Detection
+## A State Space Model-guided Cross-temporal Interaction Fine-tuning Network for Remote Sensing Change Detection
 ![image](net.png)
-the entire project can achieve [AI Studio](https://aistudio.baidu.com/projectdetail/7245102?sUid=285037&shared=1&ts=1741756831113)
 
-### Requirements
-- Python 3.10
-- paddle 3.0.0
+the entire project can achieve [AI Studio](https://aistudio.baidu.com/projectdetail/7245102?sUid=285037&shared=1&ts=1741756831113)
 
 ### Desert Semantic Change Detection (DSCD) Dataset
 
