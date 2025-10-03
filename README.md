@@ -1,4 +1,4 @@
-## A State Space Model-guided Cross-temporal Interaction Fine-tuning Network for Remote Sensing Change Detection
+## A SAM Fine-Tuning Framework with Frequency-Domain Interactive LoRA for Remote Sensing Change Detection
 ![image](net.png)
 
 the entire project can achieve [AI Studio](https://aistudio.baidu.com/projectdetail/7245102?sUid=285037&shared=1&ts=1741756831113)
