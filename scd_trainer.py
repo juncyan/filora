@@ -5,18 +5,19 @@ import paddle
 import logging
 import argparse
 
-from cd_models.fccdn import FCCDN
-from cd_models.stanet import STANet
-from cd_models.p2v import P2V
-from cd_models.msfgnet import MSFGNet
-from cd_models.fc_siam_conc import FCSiamConc
-from cd_models.dsamnet import DSAMNet
-from cd_models.snunet import SNUNet
-from cd_models.f3net import F3Net
-from paddleseg.models import UNet
-from cd_models.replkcd import CD_RLKNet
-from cd_models.cienet.ciescd import CIENetTinyViT
-from scfnet.model import SCFNet_SCD
+# from cd_models.fccdn import FCCDN
+# from cd_models.stanet import STANet
+# from cd_models.p2v import P2V
+# from cd_models.msfgnet import MSFGNet
+# from cd_models.fc_siam_conc import FCSiamConc
+# from cd_models.dsamnet import DSAMNet
+# from cd_models.snunet import SNUNet
+# from cd_models.f3net import F3Net
+# from paddleseg.models import UNet
+# from cd_models.replkcd import CD_RLKNet
+# from cd_models.cienet.ciescd import CIENetTinyViT
+# from sfinet.model import SFFNet_SCD
+from filora.ffinet_tinyvit import FFINetVT_SCD
 from core.scdwork import Work
 
 
@@ -31,17 +32,6 @@ dataset_name = "WHU_BCD"
 
 dataset_path = '/mnt/data/Datasets/{}'.format(dataset_name)
 
-# res = ResNet50_vd()
-# model = UNet(num_classes, in_channels=6)
-# model = UNetPlusPlus(num_classes, 6)
-# model = UPerNet(num_classes, ResNet50_vd(in_channels=6),(0,1,2,3))
-# model = DeepLabV3P(num_classes, backbone=ResNet50_vd(in_channels=6))
-# model = SegNeXt(num_classes=num_classes, decoder_cfg={}, backbone=ResNet50_vd(in_channels=6))
-# model = DSAMNet(3,2)
-# model = MSFGNet(3, 2)
-# model = P2V(3,2)
-# model = FCCDN(3,2)
-# model = FCSiamConc(3,2)
 # pil_logger = logging.getLogger('PIL')
 # pil_logger.setLevel(logging.INFO)
 
@@ -93,8 +83,8 @@ if __name__ == "__main__":
     # model = FESCD_Res50(img_size=args.img_size, num_seg=args.num_classes)
     # model = FESCD_Xcep65(img_size=args.img_size, num_seg=args.num_classes)
     # model = CIENetTinyViT(img_size=args.img_size, num_seg=args.num_classes)
-    # model = FFINetVT_SCD(img_size=args.img_size, num_seg=args.num_classes)
-    model = SCFNet_SCD(img_size=args.img_size, num_seg=args.num_classes)
+    model = FFINetVT_SCD(img_size=args.img_size, num_seg=args.num_classes)
+    # model = SFFNet_SCD(img_size=args.img_size, num_seg=args.num_classes)
     # model = FFINetVL_SCD(img_size=args.img_size, num_seg=args.num_classes)
     w = Work(model, args)
     

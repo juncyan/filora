@@ -7,12 +7,22 @@ import argparse
 from functools import partial
 
 
-from cd_models.msfgnet import MSFGNet
-from cd_models.fc_siam_conc import FCSiamConc
-from cd_models.f3net import F3Net
-from cd_models.replkcd import CD_RLKNet
-from cd_models.efisam import EFISam
-from filora.ffinet_tinyvit import FFINetVT_bCD
+# from cd_models.fccdn import FCCDN
+# from cd_models.stanet import STANet
+# from cd_models.p2v import P2V
+# from cd_models.msfgnet import MSFGNet
+# from cd_models.fc_siam_conc import FCSiamConc
+# from cd_models.dsamnet import DSAMNet
+# from cd_models.snunet import SNUNet
+# from cd_models.f3net import F3Net
+# from paddleseg.models import UNet
+# from cd_models.replkcd import CD_RLKNet
+# from cd_models.efisam import EFISam
+# from paddleseg.models import UNet
+# from cd_models.cienet.ciescd import CIENetTinyViT
+# from sfinet.model import SFFNet_BCD
+from filora.ffinet_tinyvit import FFINetVT_BCD
+
 
 from core.bcdwork import Work
 
@@ -27,7 +37,6 @@ dataset_name = "WHU_BCD"
 # dataset_name = "CLCD"
 
 dataset_path = '/mnt/data/Datasets/{}'.format(dataset_name)
-
 
 pil_logger = logging.getLogger('PIL')
 pil_logger.setLevel(logging.INFO)
@@ -79,7 +88,9 @@ if __name__ == "__main__":
     # model = CIENetTinyViT(img_size=args.img_size)
     # model = CD_RLKNet()
     # model = EFISam(img_size=args.img_size)
-    model = FFINetVT_CD(img_size=args.img_size)
+    # model = SFFNet_BCD(img_size=args.img_size)
+    model = FFINetVT_BCD(img_size=args.img_size)
+    
     w = Work(model, args)
   
 
