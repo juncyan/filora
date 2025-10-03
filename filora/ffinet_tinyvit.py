@@ -13,7 +13,7 @@ from .adsam import build_sam_vit_t
 from .modules import CoarseDifferenceFeaturesExtraction
 from .modules import FrequencyDomainFeatureEnhance, GlobalFeatureEnhancement
 
-class FFINetVT_CD(nn.Layer):
+class FFINetVT_BCD(nn.Layer):
     #Frequency-domain Feature Inteaction Network
     def __init__(self, img_size, num_cls=2):
         super().__init__()
@@ -47,7 +47,7 @@ class FFINetVT_CD(nn.Layer):
        
         return y
 
-class FFINetVT_SCD(FFINetVT_CD):
+class FFINetVT_SCD(FFINetVT_BCD):
     def __init__(self, img_size, num_seg=7):
         super().__init__(img_size=img_size, num_cls=1)
 
