@@ -1,7 +1,7 @@
 ## A SAM Fine-Tuning Framework with Frequency-Domain Interactive LoRA for Remote Sensing Change Detection
 ![image](net.png)
 
-the entire project can achieve [AI Studio](https://aistudio.baidu.com/projectdetail/7245102?sUid=285037&shared=1&ts=1741756831113)
+the entire project can achieve [AI Studio](https://aistudio.baidu.com/projectdetail/9663554?sUid=285037&shared=1&ts=1761739128098)
 
 ### Desert Semantic Change Detection (DSCD) Dataset
 
