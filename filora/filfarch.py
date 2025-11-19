@@ -10,16 +10,17 @@ from paddleclas.ppcls.arch.backbone.model_zoo.repvgg import RepVGGBlock
 
 
 from .adsam import build_sam_vit_t
-from .modules import CoarseDifferenceFeaturesExtraction
-from .modules import FrequencyDomainFeatureEnhance, GlobalFeatureEnhancement
 
-class FFINetVT_BCD(nn.Layer):
+from .modules import CoarseDifferenceFeaturesExtraction
+from .modules import FrequencyDomainFeatureEnhance
+
+class FILFArch_BCD(nn.Layer):
     #Frequency-domain Feature Inteaction Network
-    def __init__(self, img_size, num_cls=2):
+    def __init__(self, img_size, num_cls=2, rank=8):
         super().__init__()
         self.img_size = [img_size, img_size]
 
-        self.sam = build_sam_vit_t(img_size=img_size, rank=16)
+        self.sam = build_sam_vit_t(img_size=img_size, rank=rank)
         
         self.cife = CoarseDifferenceFeaturesExtraction(256)
         self.upc1 = FrequencyDomainFeatureEnhance(256, 128, 64)
@@ -47,9 +48,9 @@ class FFINetVT_BCD(nn.Layer):
        
         return y
 
-class FFINetVT_SCD(FFINetVT_BCD):
-    def __init__(self, img_size, num_seg=7):
-        super().__init__(img_size=img_size, num_cls=1)
+class FILFArch_SCD(FILFArch_BCD):
+    def __init__(self, img_size, num_seg=7, rank=8):
+        super().__init__(img_size=img_size, num_cls=1, rank=rank)
 
         self.img_size = [img_size, img_size]
         
