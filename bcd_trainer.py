@@ -21,7 +21,7 @@ from functools import partial
 # from paddleseg.models import UNet
 # from cd_models.cienet.ciescd import CIENetTinyViT
 # from sfinet.model import SFFNet_BCD
-from filora.ffinet_tinyvit import FFINetVT_BCD
+from filora.filfarch import FILFArch_BCD
 
 
 from core.bcdwork import Work
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     # model = CD_RLKNet()
     # model = EFISam(img_size=args.img_size)
     # model = SFFNet_BCD(img_size=args.img_size)
-    model = FFINetVT_BCD(img_size=args.img_size)
+    model = FILFArch_BCD(img_size=args.img_size)
     
     w = Work(model, args)
   
