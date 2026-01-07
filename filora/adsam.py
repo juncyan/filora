@@ -8,8 +8,8 @@ from functools import partial
 from paddleseg.utils import load_entire_model
 
 # from .segment_anything.modeling import MaskDecoder, PromptEncoder, TwoWayTransformer, TinyViT
-from .segment_anything.modeling.adtinyvit import TinyViT
-from .segment_anything.modeling.ad_encoder import ImageEncoderViT
+from segment_anything.modeling.adtinyvit import TinyViT
+from segment_anything.modeling.ad_encoder import ImageEncoderViT
 
 
 
