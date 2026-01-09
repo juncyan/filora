@@ -5,6 +5,7 @@ accepted by [TGRS](https://doi.org/10.1109/TGRS.2026.3650952)
 ![image](net.png)
 
 the entire project can achieve [AI Studio](https://aistudio.baidu.com/projectdetail/9663554?sUid=285037&shared=1&ts=1761739128098)
+You can preview the effects of MLCD and DSCD in the [demo](https://aistudio.baidu.com/application/detail/120039).
 
 ### Citation
 ```
