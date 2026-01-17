@@ -1,4 +1,4 @@
-## A SAM Fine-Tuning Framework with Frequency-Domain Interactive LoRA for Remote Sensing Change Detection
+## An SAM Fine-Tuning Framework with Frequency-Domain Interactive LoRA for Remote Sensing Change Detection
 
 accepted by [TGRS](https://doi.org/10.1109/TGRS.2026.3650952)
 
@@ -12,12 +12,12 @@ You can preview the effects of MLCD and DSCD in the [demo](https://aistudio.baid
 @ARTICLE{11329007,
   author={Huang, Junqing and Ji, Shucheng and Wang, Yapeng and Xia, Min and Yuan, Xiaochen},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={A SAM Fine-Tuning Framework with Frequency-Domain Interactive LoRA for Remote Sensing Change Detection}, 
+  title={An SAM Fine-Tuning Framework With Frequency-Domain Interactive LoRA for Remote Sensing Change Detection}, 
   year={2026},
-  volume={},
+  volume={64},
   number={},
-  pages={},
-  keywords={Remote Sensing Change Detection;Segment Anything Model;Frequency-domain Interactive LoRA;Binary Change Detection;Semantic Change Detection},
+  pages={1-19},
+  keywords={Feature extraction;Frequency-domain analysis;Semantics;Transformers;Remote sensing;Decoding;Context modeling;Land surface;Computer architecture;Fast Fourier transforms;Binary change detection (BCD);frequency-domain interactive LoRA;remote sensing change detection;segment anything model (SAM);semantic change detection (SCD)},
   doi={10.1109/TGRS.2026.3650952}}
 ```
 
